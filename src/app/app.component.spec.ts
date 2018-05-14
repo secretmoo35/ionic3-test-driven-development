@@ -9,7 +9,7 @@ import { PlatformMock, StatusBarMock, SplashScreenMock } from '../../test-config
 describe('App Component', () => {
 
   let de: DebugElement;
-  let comp: MyApp;
+  let component: MyApp;
   let fixture: ComponentFixture<MyApp>;
 
   beforeEach(async(() => {
@@ -30,15 +30,15 @@ describe('App Component', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MyApp);
-    comp = fixture.componentInstance;
+    component = fixture.componentInstance;
   });
 
   it('should be create app component', () => {
-    expect(comp instanceof MyApp).toBe(true);
+    expect(component instanceof MyApp).toBe(true);
   });
 
   it('should be rootpage is home', () => {
-    expect(comp['rootPage']).toBe('HomePage');
+    expect(component['rootPage']).toBe('HomePage');
   });
 
 });
